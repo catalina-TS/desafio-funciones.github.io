@@ -1,4 +1,4 @@
-/* Dentro del script agrega el evento para que al hacer click a cada uno de los divs, este cambie de color a negro */
+/* 4.1 Dentro del script agrega el evento para que al hacer click a cada uno de los divs, este cambie de color a negro */
 
 /* Para el cudro azul */
 
@@ -28,4 +28,20 @@ amarillo.addEventListener('click', function () {
     amarillo.style.backgroundColor = "black";
 });
 
-/* Crea una variable global que cambie de color dependiendo de la letra del teclado presionada (a, s, d) */
+/* 4.2 Crea una variable global que cambie de color dependiendo de la letra del teclado presionada (a, s, d) */
+
+document.addEventListener("keydown", function(event) {
+    const keyDiv = document.getElementById("key");
+    const contenedor = document.getElementById("contenedor");
+    
+    if (event.key === "a" ){
+        keyDiv.style.backgroundColor = "pink";
+    } else if (event.key === "s" ){
+        keyDiv.style.backgroundColor = "orange";
+    } else if (event.key === "d" ){
+        keyDiv.style.backgroundColor = "skyblue";
+    }
+})
+
+
+
