@@ -41,7 +41,31 @@ document.addEventListener("keydown", function(event) {
     } else if (event.key === "d" ){
         keyDiv.style.backgroundColor = "skyblue";
     }
+
+/* 4.3 Crear nuevos divs */
+    else if (event.key === "q"){
+        crearDiv("purple");
+    }else if (event.key === "w"){
+        crearDiv("gray");
+    }else if (event.key === "e"){
+        crearDiv("brown");
+    }
 })
+
+function crearDiv(color) {
+    const contenedor = document.getElementById("contenedor")
+    const nuevoDiv = document.createElement ("div");
+
+    /* Asignar características al nuevo div */
+    nuevoDiv.style.width = "200px";
+    nuevoDiv.style.height = "200px";
+    nuevoDiv.style.backgroundColor = color;
+    nuevoDiv.style.margin = "10px";
+    nuevoDiv.style.border = "2px solid black";
+
+contenedor.appendChild(nuevoDiv)
+
+}
 
 
 
