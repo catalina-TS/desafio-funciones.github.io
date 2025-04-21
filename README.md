@@ -1,4 +1,4 @@
-# Desafío Funciones – Módulo 3
+# Desafío Funciones – Módulo 3 - Semana 3
 
 En este desafío validaremos nuestros conocimientos en transformación y modificación de funciones y códigos en función de instrucciones dadas.
 
